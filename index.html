@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<title> HW 4 D3 Continued</title>
+    <link href="style.css" rel="stylesheet">
+<!-- fonts from google api -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Source+Code+Pro:300,400,500" rel="stylesheet">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<header>
+    <h1>W209 HW 4: Intro to D3 Continued</h1>
+    <p>Creating an Interactive D3 chart.</p>
+
+</header>
+<body>
+
+    <style>
+        /* Chart attribute styles */
+        .axis--x path {
+            display: none;
+        }
+        .axis--x text {
+            font-family: "Adobe Garamond Pro";
+            font-size: "medium";
+        }
+
+        .line {
+            fill: none;
+            stroke: steelblue;
+            /* stroke-width: 2px; */
+        }
+
+        .axis--y text, title {
+            font-family: "Adobe Garamond Pro";
+            font-size: small;
+        }
+    </style>
+    <div id="description">
+        Data from a week's worth of Pokemon Go activity. Adding bits to make interactive:
+        <ol>
+            <li>Highlighting data on mouseover</li>
+        </ol>
+    </div>
+
+    <div id="option">
+        <input name="updateButton"
+               type="button"
+               value="Display Average"
+               onclick="rollUp()" />
+    </div>
+
+    <div id="chart">
+        <svg width="700" height="400"></svg>
+        <script src="timeline.js"></script>
+    </div>
+
+
+
+</body>
+</html>
